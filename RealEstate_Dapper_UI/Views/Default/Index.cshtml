@@ -4,5 +4,24 @@
     Layout = "~/Views/Shared/_DefaultLayout.cshtml";
 }
 
-<h1>Index</h1>
+
+@await Component.InvokeAsync("_DefaultFeatureViewComponentPartial")
+
+@await Component.InvokeAsync("_DefaultProductListViewComponentPartial")
+
+@await Component.InvokeAsync("_DefaultWhoWeAreComponentPartial")
+
+@await Component.InvokeAsync("_DefaultServicesComponentPartial")
+
+@await Component.InvokeAsync("_DefaultExploreCitiesComponentPartial")
+
+@await Component.InvokeAsync("_DefaultOurTestimonialComponentPartial")
+
+@await Component.InvokeAsync("_DefaultSubFeatureComponentPartial")
+
+@await Component.InvokeAsync("_DefaultDiscountOfDayComponentPartial")
+
+@await Component.InvokeAsync("_DefaultBrandComponentPartial")
+
+
 
