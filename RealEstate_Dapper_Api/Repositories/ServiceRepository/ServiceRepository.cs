@@ -26,7 +26,7 @@ namespace RealEstate_Dapper_Api.Repositories.ServiceRepository
 
         public async Task<List<ResultServiceDto>> GetAllServiceAsync()
         {
-            string query = "Select * From Services";
+            string query = "Select * From Service";
             using (var connection = _context.CreateConnection())
             {
                 var values = await connection.QueryAsync<ResultServiceDto>(query);
@@ -34,12 +34,12 @@ namespace RealEstate_Dapper_Api.Repositories.ServiceRepository
             }
         }
 
-        public Task<GetByIdServiceDto> GetCService(int id)
+        public Task<GetByIdServiceDto> GetService(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void UpdateService(UpdateCategoryDto updateCategoryDto)
+        public void UpdateService(UpdateServiceDto updateServiceDto)
         {
             throw new NotImplementedException();
         }
