@@ -20,7 +20,13 @@
                     <input type="text" asp-for="title" class="form-control" />
                     <br />
                     <label>Kategori</label>
-                    <input type="text" asp-for="title" class="form-control" />
+                    <select class="form-select">
+                        <option value="">Kategori Seçin</option>
+                        @foreach (var item in ViewBag.v)
+                        {
+                            <option value="@item.Value">@item.Text</option>
+                        }
+                    </select>
                     <br />
                     <label>Fiyat</label>
                     <input type="text" asp-for="title" class="form-control" />
